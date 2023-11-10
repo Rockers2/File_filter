@@ -25,8 +25,8 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('✪ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/TG_SUPPORT_GROUP"),
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url="https://t.me/movies_hub_official1")
+                    InlineKeyboardButton('✪ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/Knmlpro2support_bot"),
+                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url="https://t.me/Knmlpro2_group ")
                 ],[
                     InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
                   ]]
@@ -43,17 +43,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('🦋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🦋', url=CHNL_LNK),
-                    InlineKeyboardButton('✨ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ✨', url="https://t.me/movies_hub_official1")
-                ],[
-                    InlineKeyboardButton('♛ 𝐉𝐎𝐈𝐍 𝐀𝐃 𝐅𝐑𝐄𝐄 𝐆𝐑𝐎𝐔𝐏 ♛', callback_data='paid')
-                ],[
-                    InlineKeyboardButton('👻 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('👾 Aʙᴏᴜᴛ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('💰 Eᴀʀɴ Mᴏɴᴇʏ 💰', callback_data="shortlink_info")
+                    InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            ],[
+            InlineKeyboardButton("🌠 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 🌠", url="https://t.me/Knmlpro2"), 
+            InlineKeyboardButton("📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="https://t.me/knmlpro2update")
+            ],[
+            InlineKeyboardButton("🎀 𝙹𝙾𝙸𝙽 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙶𝚁𝙾𝚄𝙿 🎀", url=f"http://t.me/Knmlpro2_Group")
+            ],[
+            InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿 ℹ️", callback_data="help"),
+            InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAJnLmTuFB3tbjsPSKlQYaKfUux_RBtzAAIEAAPBJDExieUdbguzyBAeBA") 
@@ -96,17 +94,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('🦋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🦋', url=CHNL_LNK),
-                    InlineKeyboardButton('✨ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ✨', url="https://t.me/movies_hub_official1")
-                ],[
-                    InlineKeyboardButton('♛ 𝐉𝐎𝐈𝐍 𝐀𝐃 𝐅𝐑𝐄𝐄 𝐆𝐑𝐎𝐔𝐏 ♛', callback_data='paid')
-                ],[
-                    InlineKeyboardButton('👻 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('👾 Aʙᴏᴜᴛ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('💰 Eᴀʀɴ Mᴏɴᴇʏ 💰', callback_data="shortlink_info")
+                    InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            ],[
+            InlineKeyboardButton("🌠 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 🌠", url="https://t.me/Knmlpro2"), 
+            InlineKeyboardButton("📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="https://t.me/knmlpro2update")
+            ],[
+            InlineKeyboardButton("🎀 𝙹𝙾𝙸𝙽 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙶𝚁𝙾𝚄𝙿 🎀", url=f"http://t.me/Knmlpro2_Group")
+            ],[
+            InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿 ℹ️", callback_data="help"),
+            InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
@@ -161,7 +157,7 @@ async def start(client, message):
                                 InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
                                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                             ],[
-                                InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/KUSHALHK")
+                                InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/Knmlpro2")
                             ],
                             [
                                 InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
@@ -183,7 +179,7 @@ async def start(client, message):
                           InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
                           InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                        ],[
-                          InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KUSHALHK")
+                          InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/Knmlpro2")
                          ],[ 
                             InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
                             ]
@@ -342,7 +338,7 @@ async def start(client, message):
                       InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
                       InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                    ],[
-                      InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KUSHALHK")
+                      InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/Knmlpro2")
                      ],
                      [
                         InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
@@ -408,7 +404,7 @@ async def start(client, message):
                       InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
                       InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                    ],[
-                      InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KUSHALHK")
+                      InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/Knmlpro2")
                      ],
                      [
                         InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
@@ -471,7 +467,7 @@ async def start(client, message):
               InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
               InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KUSHALHK")
+              InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/Knmlpro2")
              ],
              [
               InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
