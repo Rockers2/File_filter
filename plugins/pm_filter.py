@@ -78,8 +78,8 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
-         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/movies_hub_official1>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/movies_hub_official1")]])
+         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/knmlpro2_group>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/knmlpro2_group")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -1220,7 +1220,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://telegram.me/Knmlpro2")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/knmlpro2_group")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1245,7 +1245,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://telegram.me/knmlpro2")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/knmlpro2_group")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1401,10 +1401,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('💠 ᴛᴇʟᴇɢʀᴀᴘʜ 💠', callback_data='tele') 
          ], [ 
              InlineKeyboardButton('♻️ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ ♻️', callback_data='coct'), 
-             InlineKeyboardButton('❤‍🔥 ᴇᴀʀɴ ᴍᴏɴᴇʏ ❤‍🔥', callback_data='shortlink_info') 
+             InlineKeyboardButton('🪩 FILTERS 🪩', callback_data='filters')
          ], [ 
-             InlineKeyboardButton('🪩 FILTERS 🪩', callback_data='filters'), 
-             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
+              InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1422,11 +1421,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
             InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', callback_data='source')
         ],[
-             InlineKeyboardButton('🛰 ʀᴇɴᴅᴇʀɪɴɢ ɪɴꜰᴏ ☁️', callback_data='rendering_info')
-        ],[            
-            InlineKeyboardButton('© ᴅɪsᴄʟᴀɪᴍᴇʀ​ ©', callback_data='dics_btn')
-        ],[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
@@ -1552,13 +1547,37 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="● ◌ ◌"
+            text="⚪⚫⚫⚫⚫"
         )
         await query.message.edit_text(
-            text="● ● ◌"
+            text="⚪⚪⚫⚫⚫"
         )
         await query.message.edit_text(
-            text="● ● ●"
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1640,13 +1659,37 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="● ◌ ◌"
+            text="⚪⚫⚫⚫⚫"
         )
         await query.message.edit_text(
-            text="● ● ◌"
+            text="⚪⚪⚫⚫⚫"
         )
         await query.message.edit_text(
-            text="● ● ●"
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1665,13 +1708,37 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="● ◌ ◌"
+            text="⚪⚫⚫⚫⚫"
         )
         await query.message.edit_text(
-            text="● ● ◌"
+            text="⚪⚪⚫⚫⚫"
         )
         await query.message.edit_text(
-            text="● ● ●"
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1690,13 +1757,37 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="● ◌ ◌"
+            text="⚪⚫⚫⚫⚫"
         )
         await query.message.edit_text(
-            text="● ● ◌"
+            text="⚪⚪⚫⚫⚫"
         )
         await query.message.edit_text(
-            text="● ● ●"
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1747,13 +1838,37 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="● ◌ ◌"
+            text="⚪⚫⚫⚫⚫"
         )
         await query.message.edit_text(
-            text="● ● ◌"
+            text="⚪⚪⚫⚫⚫"
         )
         await query.message.edit_text(
-            text="● ● ●"
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚫⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚫"
+        )
+        await query.message.edit_text(
+            text="⚪⚪⚪⚪⚪"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
